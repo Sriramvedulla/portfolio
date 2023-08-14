@@ -64,12 +64,36 @@ body {
 }
 .abtleft {
   margin-left: 10%;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes example {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 0%;
+  }
 }
 .abt-left img {
   width: 50%;
 }
 .abtright {
   margin-top: 10%;
+  position: relative;
+  animation-name: examples;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes examples {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 0%;
+  }
 }
 .abtright h1 {
   text-align: center;
@@ -101,7 +125,6 @@ body {
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s;
 }
 .home-hero-mouse {
   position: absolute;
@@ -241,6 +264,7 @@ body {
 }
 .about-project {
   background-color: #dfcfbe;
+  padding-bottom: 5%;
 }
 .about-heading-pro {
   padding-top: 20px;
